@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+      a#r{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, .5);
+      }
+      a#r:hover{
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="r" href>> repository</a>
+    <section
+      class="baiTap">
+      <div class="baiTap__content container">
+        <div class="btn-toolbar mt-3 text-center" role="toolbar"
+          aria-label="Toolbar with button groups">
+          <div class="btn-group" role="group" aria-label="First group">
+            <button type="button" id="btn1" class="btn btn-secondary">1</button>
+            <button type="button" id="btn2" class="btn btn-secondary">2</button>
+            <button type="button" id="btn3" class="btn btn-secondary">3</button>
+            <button type="button" id="btn4" class="btn btn-secondary">4</button>
+          </div>
+        </div>
+
+        <div class="bt bt1">
+          <div class="bt__content">
+            <input type="number" name id="dc" placeholder="Điểm chuẩn">
+            <select name id="slt-kv">
+              <option value>Chọn khu vực</option>
+              <option value="opt-a">A</option>
+              <option value="opt-b">B</option>
+              <option value="opt-c">C</option>
+            </select>
+            <select name id="slt-dt">
+              <option value>Chọn đối tượng</option>
+              <option value="opt-1">1</option>
+              <option value="opt-2">2</option>
+              <option value="opt-3">3</option>
+            </select>
+            <input type="number" placeholder="Điểm môn 1" id="d1">
+            <input type="number"
+              placeholder="Điểm môn 2" id="d2">
+            <input type="number"
+              placeholder="Điểm môn 3" id="d3">
+          </div>
+
+          <button class="submitBtn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <div class="ketQua d-inline-block">
+            <h3 class="d-inline-block">Kết quả sẽ hiển thị ở đây</h3>
+          </div>
+        </div>
+        <div class="bt bt2" style="display: none;">
+          <div class="bt__content">
+            <input type="text" name id="n" placeholder="Nhập tên">
+            <input type="number" placeholder="Số điện sử dụng" id="sd">
+          </div>
+
+          <button class="submitBtn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <div class="ketQua d-inline-block">
+            <h3 class="d-inline-block">Kết quả sẽ hiển thị ở đây</h3>
+          </div>
+        </div>
+        <div class="bt bt3" style="display: none;">
+          <div class="bt__content">
+            <input type="text" name id="n" placeholder="Nhập tên">
+            <input type="number" placeholder="Thu nhập hàng năm" id="tn">
+            <input type="number" placeholder="Số người phụ thuộc" id="pt">
+          </div>
+
+          <button class="submitBtn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <div class="ketQua d-inline-block">
+            <h3 class="d-inline-block">Kết quả sẽ hiển thị ở đây</h3>
+          </div>
+        </div>
+        <div class="bt bt4" style="display: none;">
+          <div class="bt__content">
+            <select name id="slt-lkh">
+              <option value id>Chọn loại khách hàng</option>
+              <option value="kh1">Nhà dân</option>
+              <option value="kh2">Doanh nghiệp</option>
+            </select>
+            <input type="text" placeholder="Nhập mã khách hàng" id="mkh">
+            <input type="number" placeholder="Nhập số kênh cao cấp" id="sc">
+            <input type="number" class="d-none" placeholder="Số kết nối"
+              id="skn">
+          </div>
+
+          <button class="submitBtn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <div class="ketQua d-inline-block">
+            <h3 class="d-inline-block">Kết quả sẽ hiển thị ở đây</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/js.js"></script>
+  </body>
+</html>
